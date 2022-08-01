@@ -1,10 +1,6 @@
 from scripts.main import capitalize
 
-if capitalize('hello') != 'Hello':
-    # Выбрасываем исключение и завершаем выполнение теста
-    raise Exception('Функция работает неверно!')
-
-if capitalize('') != '':
-    raise Exception('Функция работает неверно!')
+assert capitalize('hello') == 'Hello'
+assert capitalize('') == ''
 
 print('Все тесты пройдены!')
